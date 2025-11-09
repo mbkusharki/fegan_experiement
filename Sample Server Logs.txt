@@ -1,0 +1,337 @@
+PS C:\Users\kusha\gemini_FeGAN> python server.py --mu 0.01                
+C:\Python313\Lib\site-packages\torch_geometric\__init__.py:4: UserWarning: An issue occurred while importing 'torch-scatter'. Disabling its usage. Stacktrace: Could not load this library: C:\Users\kusha\AppData\Roaming\Python\Python313\site-packages\torch_scatter\_version_cpu.pyd
+  import torch_geometric.typing
+C:\Python313\Lib\site-packages\torch_geometric\__init__.py:4: UserWarning: An issue occurred while importing 'torch-cluster'. Disabling its usage. Stacktrace: Could not load this library: C:\Users\kusha\AppData\Roaming\Python\Python313\site-packages\torch_cluster\_version_cpu.pyd
+  import torch_geometric.typing
+C:\Python313\Lib\site-packages\torch_geometric\__init__.py:4: UserWarning: An issue occurred while importing 'torch-spline-conv'. Disabling its usage. Stacktrace: Could not load this library: C:\Users\kusha\AppData\Roaming\Python\Python313\site-packages\torch_spline_conv\_version_cpu.pyd        
+  import torch_geometric.typing      
+C:\Python313\Lib\site-packages\torch_geometric\__init__.py:4: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: Could not load this library: C:\Users\kusha\AppData\Roaming\Python\Python313\site-packages\torch_sparse\_version_cpu.pyd
+  import torch_geometric.typing      
+C:\Python313\Lib\site-packages\torch_geometric\llm\utils\backend_utils.py:26: DeprecationWarning: `torch_geometric.distributed` has been deprecated since 2.7.0 and will no longer be maintained. For distributed training, refer to our tutorials on distributed training at https://pytorch-geometric.readthedocs.io/en/latest/tutorial/distributed.html or cuGraph examples at https://github.com/rapidsai/cugraph-gnn/tree/main/python/cugraph-pyg/cugraph_pyg/examples
+  from torch_geometric.distributed import (
+--- Starting FeGAN Server (Mu=0.01, Device=cpu) ---
+C:\Python313\Lib\site-packages\torch_geometric\inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+
+Starting Flexible FeGAN Federated Server on 0.0.0.0:8080
+Server will start training as soon as 1 or more clients connect...        
+WARNING :   DEPRECATED FEATURE: flwr.server.start_server() is deprecated. 
+        Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+                $ flower-superlink --insecure
+
+        To view usage and all available options, run:
+
+                $ flower-superlink --help
+
+        Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+
+INFO :      Starting Flower server, config: num_rounds=20, no round_timeout
+INFO :      Flower ECE: gRPC server running (20 rounds), SSL is disabled  
+INFO :      [INIT]
+INFO :      Using initial global parameters provided by strategy
+INFO :      Starting evaluation of initial global parameters
+INFO :      Evaluation returned no results (`None`)
+INFO :
+INFO :      [ROUND 1]
+INFO :      configure_fit: strategy sampled 1 clients (out of 1)
+INFO :      aggregate_fit: received 1 results and 0 failures
+Round 1 - Aggregated Train Loss: 0.5381, Train Accuracy: 0.8856
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 1 - Aggregated Val Loss: 4.3217, Val Accuracy: 0.4345
+New best accuracy: 0.4345. Saving model parameters...
+INFO :      
+INFO :      [ROUND 2]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 2 - Aggregated Train Loss: 0.7093, Train Accuracy: 0.7956
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 2 - Aggregated Val Loss: 0.9236, Val Accuracy: 0.6984
+New best accuracy: 0.6984. Saving model parameters...
+INFO :      
+INFO :      [ROUND 3]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 3 - Aggregated Train Loss: 0.6060, Train Accuracy: 0.8235
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 3 - Aggregated Val Loss: 0.7134, Val Accuracy: 0.7820
+New best accuracy: 0.7820. Saving model parameters...
+INFO :      
+INFO :      [ROUND 4]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 4 - Aggregated Train Loss: 0.5726, Train Accuracy: 0.8389
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 4 - Aggregated Val Loss: 0.7457, Val Accuracy: 0.7816
+INFO :
+INFO :      [ROUND 5]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 5 - Aggregated Train Loss: 0.5496, Train Accuracy: 0.8432
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 5 - Aggregated Val Loss: 0.7300, Val Accuracy: 0.7886
+New best accuracy: 0.7886. Saving model parameters...
+INFO :      
+INFO :      [ROUND 6]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 6 - Aggregated Train Loss: 0.5246, Train Accuracy: 0.8519
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 6 - Aggregated Val Loss: 0.7975, Val Accuracy: 0.7890
+New best accuracy: 0.7890. Saving model parameters...
+INFO :      
+INFO :      [ROUND 7]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 7 - Aggregated Train Loss: 0.5086, Train Accuracy: 0.8560
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 7 - Aggregated Val Loss: 0.8196, Val Accuracy: 0.7867
+INFO :
+INFO :      [ROUND 8]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 8 - Aggregated Train Loss: 0.4983, Train Accuracy: 0.8604
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 8 - Aggregated Val Loss: 0.9343, Val Accuracy: 0.7765
+INFO :
+INFO :      [ROUND 9]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 9 - Aggregated Train Loss: 0.4780, Train Accuracy: 0.8659
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 9 - Aggregated Val Loss: 0.8397, Val Accuracy: 0.7937
+New best accuracy: 0.7937. Saving model parameters...
+INFO :      
+INFO :      [ROUND 10]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 10 - Aggregated Train Loss: 0.4733, Train Accuracy: 0.8684
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 10 - Aggregated Val Loss: 0.8814, Val Accuracy: 0.7659
+INFO :
+INFO :      [ROUND 11]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 11 - Aggregated Train Loss: 0.4683, Train Accuracy: 0.8697
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 11 - Aggregated Val Loss: 0.7974, Val Accuracy: 0.7788
+INFO :
+INFO :      [ROUND 12]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 12 - Aggregated Train Loss: 0.4643, Train Accuracy: 0.8717
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 12 - Aggregated Val Loss: 0.9640, Val Accuracy: 0.7808
+INFO :
+INFO :      [ROUND 13]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 13 - Aggregated Train Loss: 0.4525, Train Accuracy: 0.8751
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 13 - Aggregated Val Loss: 0.8894, Val Accuracy: 0.7835
+INFO :
+INFO :      [ROUND 14]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 14 - Aggregated Train Loss: 0.4480, Train Accuracy: 0.8765
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 14 - Aggregated Val Loss: 0.8956, Val Accuracy: 0.7761
+
+--- Accuracy plateaued. Reducing learning rate to 0.000010 ---
+
+INFO :
+INFO :      [ROUND 15]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 15 - Aggregated Train Loss: 0.2938, Train Accuracy: 0.8855
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 15 - Aggregated Val Loss: 0.8411, Val Accuracy: 0.7984
+New best accuracy: 0.7984. Saving model parameters...
+INFO :      
+INFO :      [ROUND 16]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 16 - Aggregated Train Loss: 0.2887, Train Accuracy: 0.8858
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 16 - Aggregated Val Loss: 0.8140, Val Accuracy: 0.8543
+New best accuracy: 0.8543. Saving model parameters...
+INFO :      
+INFO :      [ROUND 17]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 17 - Aggregated Train Loss: 0.2836, Train Accuracy: 0.8862
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 17 - Aggregated Val Loss: 0.8037, Val Accuracy: 0.9044
+New best accuracy: 0.9044. Saving model parameters...
+INFO :      
+INFO :      [ROUND 18]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 18 - Aggregated Train Loss: 0.2851, Train Accuracy: 0.8886
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 18 - Aggregated Val Loss: 0.7544, Val Accuracy: 0.9047
+New best accuracy: 0.9047. Saving model parameters...
+INFO :      
+INFO :      [ROUND 19]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 19 - Aggregated Train Loss: 0.2770, Train Accuracy: 0.8920
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 19 - Aggregated Val Loss: 0.7310, Val Accuracy: 0.9047
+INFO :      
+INFO :      [ROUND 20]
+INFO :      configure_fit: strategy sampled 2 clients (out of 2)
+INFO :      aggregate_fit: received 2 results and 0 failures
+Round 20 - Aggregated Train Loss: 0.2827, Train Accuracy: 0.8901
+INFO :      configure_evaluate: strategy sampled 2 clients (out of 2)     
+INFO :      aggregate_evaluate: received 2 results and 0 failures
+Round 20 - Aggregated Val Loss: 0.7123, Val Accuracy: 0.9047
+INFO :      
+INFO :      [SUMMARY]
+INFO :      Run finished 20 round(s) in 51927.87s
+INFO :          History (loss, distributed):
+INFO :                  round 1: 4.321674719306768
+INFO :                  round 2: 0.9236285425868689
+INFO :                  round 3: 0.7134434007546481
+INFO :                  round 4: 0.7457240413801343
+INFO :                  round 5: 0.7299864307922476
+INFO :                  round 6: 0.7974813066276849
+INFO :                  round 7: 0.8196467347589194
+INFO :                  round 8: 0.9343202621329064
+INFO :                  round 9: 0.8397478205900566
+INFO :                  round 10: 0.8813736895720164
+INFO :                  round 11: 0.7973966246726466
+INFO :                  round 12: 0.9640094871614494
+INFO :                  round 13: 0.8894295406107809
+INFO :                  round 14: 0.895576226010042
+INFO :                  round 15: 0.8410911353779774
+INFO :                  round 16: 0.8239540180154875
+INFO :                  round 17: 0.8036993201456818
+INFO :                  round 18: 0.7544421301168553
+INFO :                  round 19: 0.7310030616965948
+INFO :                  round 20: 0.7122622639408298
+INFO :          History (metrics, distributed, fit):
+INFO :          {'train_accuracy': [(1, 0.8856203288490284),
+INFO :                              (2, 0.7955538119523997),
+INFO :                              (3, 0.8235124885576043),
+INFO :                              (4, 0.8388649143454948),
+INFO :                              (5, 0.8431803321564012),
+INFO :                              (6, 0.8519419380149077),
+INFO :                              (7, 0.8560481234471036),
+INFO :                              (8, 0.8603896953053485),
+INFO :                              (9, 0.8659343533411795),
+INFO :                              (10, 0.8683928337910292),
+INFO :                              (11, 0.8696743821106316),
+INFO :                              (12, 0.87171439780306),
+INFO :                              (13, 0.8751405780044461),
+INFO :                              (14, 0.8764744344187263),
+INFO :                              (15, 0.8855498888452987),
+INFO :                              (16, 0.8858375833660259),
+INFO :                              (17, 0.8861775859814307),
+INFO :                              (18, 0.9086360664312802),
+INFO :                              (19, 0.9120099385379887),
+INFO :                              (20, 0.9201006930822545)],
+INFO :           'train_loss': [(1, 0.5380990355923062),
+INFO :                          (2, 0.709330544320698),
+INFO :                          (3, 0.6059514086667539),
+INFO :                          (4, 0.5725698973314479),
+INFO :                          (5, 0.5496317581416701),
+INFO :                          (6, 0.5245958088899487),
+INFO :                          (7, 0.5086002336211373),
+INFO :                          (8, 0.4982516836669738),
+INFO :                          (9, 0.4780151271199745),
+INFO :                          (10, 0.4733222434564688),
+INFO :                          (11, 0.46827229541469473),
+INFO :                          (12, 0.46434064452263746),
+INFO :                          (13, 0.45246050190379833),
+INFO :                          (14, 0.4479553848843172),
+INFO :                          (15, 0.29379608286575487),
+INFO :                          (16, 0.2886530515776615),
+INFO :                          (17, 0.283633564814478),
+INFO :                          (18, 0.28511575402591804),
+INFO :                          (19, 0.2969928871368882),
+INFO :                          (20, 0.30269349586984704)]}
+INFO :          History (metrics, distributed, evaluate):
+INFO :          {'val_accuracy': [(1, 0.4345098039215686),
+INFO :                            (2, 0.6984313725490197),
+INFO :                            (3, 0.7819607843137255),
+INFO :                            (4, 0.7815686274509804),
+INFO :                            (5, 0.7886274509803921),
+INFO :                            (6, 0.7890196078431373),
+INFO :                            (7, 0.7866666666666666),
+INFO :                            (8, 0.7764705882352941),
+INFO :                            (9, 0.7937254901960784),
+INFO :                            (10, 0.7658823529411765),
+INFO :                            (11, 0.7788235294117647),
+INFO :                            (12, 0.7807843137254902),
+INFO :                            (13, 0.7835294117647059),
+INFO :                            (14, 0.7760784313725491),
+INFO :                            (15, 0.7984313725490196),
+INFO :                            (16, 0.8543137254901961),
+INFO :                            (17, 0.9043823529411765),
+INFO :                            (18, 0.9047019607843138),
+INFO :                            (19, 0.9047270588235294),
+INFO :                            (20, 0.9047480431372549)],
+INFO :           'val_loss': [(1, 4.32167483821895),
+INFO :                        (2, 0.9236285646631734),
+INFO :                        (3, 0.7134433940476879),
+INFO :                        (4, 0.7457240518162342),
+INFO :                        (5, 0.7299864319136607),
+INFO :                        (6, 0.7974813015991343),
+INFO :                        (7, 0.8196467220937208),
+INFO :                        (8, 0.9343202697795719),
+INFO :                        (9, 0.8397477911441007),
+INFO :                        (10, 0.881373694417746),
+INFO :                        (11, 0.7973966006435156),
+INFO :                        (12, 0.9640094752245665),
+INFO :                        (13, 0.8894295426596558),
+INFO :                        (14, 0.8955762256317854),
+INFO :                        (15, 0.8410911506598069),
+INFO :                        (16, 0.8139540008676041),
+INFO :                        (17, 0.8036993501508604),
+INFO :                        (18, 0.7544421482889907),
+INFO :                        (19, 0.7310030938400182),
+INFO :                        (20, 0.712622576521734)]}
+INFO :
+
+--- Server finished training ---     
+Final best accuracy achieved across clients: 0.8196
+
+--- Evaluating best model (best_fegan_model_mu_0.01.pth) on global test set ---
+Traceback (most recent call last):
+  File "C:\Users\kusha\gemini_FeGAN\server.py", line 233, in <module>     
+    main()
+    ~~~~^^
+  File "C:\Users\kusha\gemini_FeGAN\server.py", line 181, in main
+    best_params_nd = torch.load(best_model_path)
+  File "C:\Python313\Lib\site-packages\torch\serialization.py", line 1529, in load
+    raise pickle.UnpicklingError(_get_wo_message(str(e))) from None       
+_pickle.UnpicklingError: Weights only load failed. This file can still be loaded, to do so you have two options, do those steps only if you trust the source of the checkpoint.
+        (1) In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.
+        (2) Alternatively, to load with `weights_only=True` please check the recommended steps in the following error message.
+        WeightsUnpickler error: Unsupported global: GLOBAL numpy._core.multiarray._reconstruct was not an allowed global by default. Please use `torch.serialization.add_safe_globals([numpy._core.multiarray._reconstruct])` or the `torch.serialization.safe_globals([numpy._core.multiarray._reconstruct])` context manager to allowlist this global if you trust this class/function.
+
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.
+PS C:\Users\kusha\gemini_FeGAN>

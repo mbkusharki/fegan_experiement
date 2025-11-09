@@ -1,2 +1,2 @@
-# fegan_experiement
-This Repository is the destination of all the python files use during my PhD work.
+# gemini_FeGAN
+My python files
