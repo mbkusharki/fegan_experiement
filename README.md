@@ -28,7 +28,6 @@ The system uses **EfficientNet-B0** combined with **SLIC Superpixels** to extrac
 * `models.py`: Defines the high-capacity `FeGAN` PyTorch model architecture.
 * `data_utils.py`: Handles loading and stratified splitting of the `.pt` graph files.
 * `app.py`: The interactive Streamlit web dashboard.
-* `cache_clear.py`: Utility to wipe generated `.pt` and `.json` cache files.
 
 ---
 
