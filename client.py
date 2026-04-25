@@ -139,7 +139,7 @@ def main():
     parser = argparse.ArgumentParser(description="FeGAN Client (Sparse Updates)")
     parser.add_argument("--farm-name", type=str, required=True, help="e.g., Farm_1")
     parser.add_argument("--epochs", type=int, default=10, help="Local training epochs")
-    parser.add_argument("--sparsity", type=float, default=0.9, help="Sparsity level (0.0 to 1.0), e.g., 0.9 means keep 10%")
+    parser.add_argument("--sparsity", type=float, default=0.9, help="Sparsity level (0.0 to 1.0), e.g., 0.9 means keep 10%%")
     args = parser.parse_args()
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
